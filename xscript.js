@@ -12,7 +12,7 @@ for (i = 0; i < scs.length; i++) {
         cde = cde.replace(/eventL/g,'addEventListener');
         cde = cde.replace(/createE/g,'document.createElement');
         cde = cde.replace(/createTN/g, 'document.createTextNode');
-        cde = cde.replace(/apendC/g, 'appendChild');
+        cde = cde.replace(/appendC/g, 'appendChild');
         fn = new Function(cde);
         fn();
     }
