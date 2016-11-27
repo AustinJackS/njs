@@ -1,29 +1,11 @@
 # xscript
 new javascript-based compiler for browsers using &lt;div class="njs>//code&lt;/div>
 
-<h1>Unlike most scripts, you instert this one after the &#60;/body&#62; tag. Like this:<h1>
-<h3>&#60;body&#62;&#60;/body&#62;&lt;end&gt;
-&lt;script src=&quot;https://austinjacks.github.io/njs/xscript.js&quot;&gt;&lt;/script&gt;
-&lt;/end&gt;</h3>
+<h1>insert this script in the &lt;head&gt; tag with the defer artibute:</h1>
+<br>
+</h2>&lt;script src=&quot;https://austinjacks.github.io/njs/xscript.js&quot; defer&gt;&lt;/script&gt;</h2>
 <br>
 <br>
-<h1>Using ajax with xscript:</h1>
+<h1>What this script does is add a new script type:text/xscript</h1>
 <br>
-<h2>
-&lt;html&gt;
-&lt;body&gt;
-&lt;script&gt;
-function useAjax(resp) {
-	document.write(resp);
-}
-&lt;/script&gt;
-&lt;script type=&quot;text/xscript&quot;&gt;
-ajx(&quot;GET&quot;,&quot;ajax_info.txt&quot;,true)-aj;
-setTimeout(function(){ useAjax(window.ajaxresp); }, 50);
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;end&gt;
-&lt;script src=&quot;https://austinjacks.github.io/njs/xscript.js&quot;&gt;&lt;/script&gt;
-&lt;/end&gt;
-&lt;/html&gt;
-<h2>
+<p>Xscript has special tags such as 'ajx("GET","Ajax.txt",true)-aj;' for ajax, but can also run raw javascript such as "setTimeout(function(){ document.write(window.ajaxresp); }, 300);"</p>
