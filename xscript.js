@@ -9,7 +9,7 @@ for (i = 0; i < scs.length; i++) {
         cde= cde.replace(/byId/g,'document.getElementById');
         cde = cde.replace(/byClass/g,'document.getElementsByClassName');
         cde = cde.replace(/byTag/g,'document.getElementsByTagName');
-        cde = cde.replace(/eventL/g,'document.addEventListener');
+        cde = cde.replace(/eventL/g,'addEventListener');
         fn = new Function(cde);
         fn();
     }
