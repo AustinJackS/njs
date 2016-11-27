@@ -8,6 +8,7 @@ for (i = 0; i < scs.length; i++) {
         cde = cde.replace(/-aj/g,'; xhttp.send()');
         cde= cde.replace(/byId/g,'document.getElementById');
         cde = cde.replace(/byClass/g,'document.getElementsByClassName');
+        cde = cde.replace(/byTag/g,'document.getElementsByTagName');
         fn = new Function(cde);
         fn();
     }
