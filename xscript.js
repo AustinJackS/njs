@@ -10,6 +10,9 @@ for (i = 0; i < scs.length; i++) {
         cde = cde.replace(/byClass/g,'document.getElementsByClassName');
         cde = cde.replace(/byTag/g,'document.getElementsByTagName');
         cde = cde.replace(/eventL/g,'addEventListener');
+        cde = cde.replace(/createE/g,'document.createElement');
+        cde = cde.replace(/createTN/g, 'document.createTextNode');
+        cde = cde.replace(/apendC/g, 'appendChild');
         fn = new Function(cde);
         fn();
     }
