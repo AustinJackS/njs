@@ -13,6 +13,8 @@ for (i = 0; i < scs.length; i++) {
         cde = cde.replace(/createE/g,'document.createElement');
         cde = cde.replace(/createTN/g, 'document.createTextNode');
         cde = cde.replace(/appendC/g, 'appendChild');
+        cde = cde.replace(/setTM/g, 'setTimeout');
+        cde = cde.replace(/setINR/g, 'setInterval');
         fn = new Function(cde);
         fn();
     }
